@@ -350,7 +350,7 @@ ul {
   margin: 0;
 }
 
-h1, h2, h3 {
+h1, h2, .h2-menu, h3 {
   margin: 0 0 5rem 0;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
@@ -362,16 +362,16 @@ h1 {
   font-size: 4rem;
 }
 
-h2 {
+h2, .h2-menu {
   font-size: 3.6rem;
   color: #5E311E;
 }
-h2 span {
+h2 span, .h2-menu span {
   color: #C39C63;
   font-size: 1.8rem;
   display: block;
 }
-h2::after {
+h2::after, .h2-menu::after {
   content: "";
   display: block;
   width: 10rem;
@@ -379,6 +379,16 @@ h2::after {
   margin: 0 auto;
   background-image: url(../img/coffee.svg);
   background-size: 10rem;
+}
+
+.h2-menu {
+  color: #FFFFFF;
+}
+.h2-menu span {
+  color: #FFFFFF;
+}
+.h2-menu::after {
+  display: none;
 }
 
 h3 {
@@ -593,4 +603,9 @@ h3 {
   .gallery .image:nth-child(10) img {
     width: 62rem;
   }
+}
+
+.our-menu {
+  background-color: #5E311E;
+  padding: 15rem 5rem 20rem;
 }
