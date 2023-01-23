@@ -204,8 +204,43 @@
         </section>
       </div>
     </section>
+
     <section class="reservation-form container" id="reservations">
       <h2><span>Book your</span> Table</h2>
+      <div class="contact-content">
+        <form action="#">
+          <div class="field">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Name" />
+          </div>
+          <div class="field">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Your Email" />
+          </div>
+          <div class="field">
+            <label>How many of you:</label>
+            <select>
+              <option value="" disabled selected>--Select--</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="more">5+</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="time">Time:</label>
+            <input type="time" id="time" min="11:00" max="24:00" />
+          </div>
+          <div class="field">
+            <label for="date">Date:</label>
+            <input type="date" id="date" />
+          </div>
+          <div class="field">
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
     </section>
 
     <footer class="footer">

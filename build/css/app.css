@@ -666,6 +666,49 @@ h3 {
   }
 }
 
+@media (min-width: 768px) {
+  .contact-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    background-image: url(../img/coffee_beans.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 40%;
+  }
+}
+
+form .field {
+  margin-bottom: 2rem;
+}
+form .field:last-of-type {
+  margin-bottom: 0;
+}
+form .field label {
+  text-transform: uppercase;
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+form .field input:not([type=submit]), form .field select {
+  width: 100%;
+  padding: 1rem;
+  border: 0.5rem solid #5E311E;
+}
+form .field input[type=submit] {
+  background-color: #5E311E;
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  color: #FFFFFF;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+form .field input[type=submit]:hover {
+  cursor: pointer;
+}
+
 .footer {
   background-color: #5E311E;
 }
