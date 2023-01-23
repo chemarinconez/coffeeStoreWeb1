@@ -628,7 +628,7 @@ h3 {
   .grid-menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 2.5rem;
   }
 }
 
@@ -653,4 +653,15 @@ h3 {
 .menu li .price {
   font-size: 4rem;
   font-weight: 700;
+}
+
+.reservation-form {
+  background-color: #FFFFFF;
+  padding: 2rem;
+}
+@media (min-width: 768px) {
+  .reservation-form {
+    padding: 10rem;
+    margin-top: -10rem;
+  }
 }

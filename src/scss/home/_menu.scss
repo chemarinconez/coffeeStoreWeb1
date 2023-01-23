@@ -21,7 +21,7 @@
 
 .grid-menu {
     @include m.tablet { 
-        @include m.grid(2, 2rem);
+        @include m.grid(2, 2.5rem);
     }
 }
 
